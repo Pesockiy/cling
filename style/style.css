@@ -350,6 +350,7 @@ body {
   font: 18px/1.5 'Lato-Bold';
 }
 .services__item-top {
+  position: relative;
   height: 200px;
   margin-bottom: 20px;
   background: #e6e6e6;
@@ -361,10 +362,41 @@ body {
   content: '';
   position: absolute;
 }
+.services__item-top::before {
+  width: 68%;
+  top: 25%;
+  left: 0;
+  height: 76px;
+  background: #fff;
+}
 .services__item-top:nth-of-type(1)::after {
   content: '>';
-  font: 100px monospace;
+  font: 100px/1 monospace;
+  top: 20%;
+  left: 46%;
   transform: rotate(90deg);
+}
+.services__item:nth-of-type(2) .services__item-top::before {
+  left: auto;
+  right: 0;
+}
+.services__item:nth-of-type(3) .services__item-top::before {
+  left: auto;
+  top: 12%;
+  right: 28%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.services__item:nth-of-type(2) .services__item-top::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: no-repeat url('../img/sprite.png');
+  background-position: 0 152px;
+}
+.services__item:nth-of-type(3) .services__item-top::after {
+  content: '';
 }
 .start {
   position: relative;
@@ -416,13 +448,21 @@ body {
   display: block;
   width: 100%;
 }
-.start .form__search,
 .start .form__select {
+  position: relative;
+}
+.start .form__search,
+.start .form__select,
+.start .select2-selection {
   height: 44px;
   border: none;
   border-radius: 5px;
 }
+.start .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 44px;
+}
 .start .form__label {
+  margin-bottom: 8px;
   font-size: 22px;
   color: #517398;
 }
@@ -438,7 +478,7 @@ body {
   display: inline-block;
 }
 .comments__col-left {
-  width: 730px;
+  width: 734px;
   margin-right: 25px;
   margin-bottom: 32px;
 }
@@ -453,13 +493,15 @@ body {
   color: #333;
 }
 .comments__item {
-  position: relative;
   display: inline-block;
   width: 351px;
-  margin: 30px 30px 30px 0;
+  margin: 30px 28px 30px 0;
   vertical-align: text-top;
 }
-.comments__item::before {
+.comments__item .comments__text {
+  position: relative;
+}
+.comments__item .comments__text::after {
   content: '';
   z-index: 1;
   top: 26px;
@@ -467,10 +509,13 @@ body {
   position: absolute;
   width: 42px;
   height: 42px;
-  background: url('../img/Quote%20copia.png') no-repeat center;
+  background: url('../img/sprite.png') 72px 194px;
 }
-.comments__item--active::before {
-  background-image: url('../img/Quote.png');
+.comments__item:last-of-type {
+  margin-right: 0;
+}
+.comments__item--active .comments__text::after {
+  background-position: 142px 194px;
 }
 .comments__item--active .comments__text {
   color: #fff;
