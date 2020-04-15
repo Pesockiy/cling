@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>spanishSite</title>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -39,9 +39,9 @@
                         <br>
                         una oferta para ti,
                         <br>
-                        <i>es porque...</i> <span class="home__text--accent">aún</span>
+                        <i>es porque...</i> <span class="home__text-accent">aún</span>
                         <br>
-                        <p class="home__text--accent">NO TE CONOCEN.</p>
+                        <p class="home__text-accent">NO TE CONOCEN.</p>
                     </h1>
                 </div>
                 <div class="home__col-right">
@@ -49,25 +49,25 @@
                     <form action="#" class="home__form form">
                         <div class="form__group">
                             <label class="form__label" for="phone">Phone</label>
-                            <input class="form__input" type="text" name="phone" id="phone">
+                            <input required class="form__input" type="tel" name="phone" id="phone">
                         </div>
                         <div class="form__group">
                             <label class="form__label" for="email">Email</label>
-                            <input class="form__input" type="email" name="email" id="email">
+                            <input required class="form__input" type="email" name="email" id="email">
                         </div>
                         <div class="form__group">
                             <label class="form__label" for="password1">Password</label>
-                            <input class="form__input" type="password" name="password1" id="password1">
+                            <input required class="form__input" type="password" name="password1" id="password1">
                         </div>
                         <div class="form__group">
                             <label class="form__label" for="password2">Repeat password</label>
-                            <input class="form__input" type="password" name="password2" id="password2">
+                            <input required class="form__input" type="password" name="password2" id="password2">
                         </div>
                         <div class="form__group">
                             <button class="home__form-button" type="button">create an account</button>
                         </div>
                         <div class="form__check">
-                            <input class="checkbox" type="checkbox" id="checkbox">
+                            <input required class="checkbox" type="checkbox" id="checkbox">
                             <label class="checkbox__label" for="checkbox"></label>
                             <span class="checkbox__text">Click to confirm your consent</span>
                         </div>
@@ -87,28 +87,57 @@
                 <h1 class="experience__ttl">¡ELIGE TÚ!</h1>
                 <ul class="experience__list">
                     <li class="experience__item">
-                        <div class="experience__item-top"></div>
+                        <div class="experience__item-top">
+                            <div class="experience__content">
+                                <p class="experience__content-ttl">
+                                    +4.500
+                                </p>
+                                <p class="experience__content-text">
+                                    empresas
+                                </p>
+                            </div>
+                        </div>
                         <h3 class="experience__item-ttl">
                             Lorem ipsum dolor.
                         </h3>
                         <p class="experience__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias voluptate vel est sint atque et ullam recusandae cum odit.</p>
                     </li>
                     <li class="experience__item">
-                        <div class="experience__item-top"></div>
+                        <div class="experience__item-top">
+                            <div class="experience__content">
+                                <p class="experience__content-ttl">
+                                    60%
+                                </p>
+                                <p class="experience__content-text">
+                                    de las empresas
+                                    no utilizan los
+                                    portales
+                                    de empleo
+                                </p>
+                            </div>
+                        </div>
                         <h3 class="experience__item-ttl">
                             Lorem ipsum dolor.
                         </h3>
                         <p class="experience__item-text">Odio sed non ipsum ipsa quibusdam repellat, adipisci possimus, facilis quod sunt ut quisquam fugit aliquam, magni aperiam eum est!</p>
                     </li>
                     <li class="experience__item">
-                        <div class="experience__item-top"></div>
+                        <div class="experience__item-top">
+                            <div class="experience__content">
+                                <img src="img/mail.png" alt="" class="experience__content-img">
+                            </div>
+                        </div>
                         <h3 class="experience__item-ttl">
                             Lorem ipsum dolor.
                         </h3>
                         <p class="experience__item-text">Laboriosam minima, excepturi, eum debitis, consequatur amet officia atque doloribus rerum, aliquid nam nesciunt recusandae! Tenetur sint provident alias voluptatum.</p>
                     </li>
                     <li class="experience__item">
-                        <div class="experience__item-top"></div>
+                        <div class="experience__item-top">
+                            <div class="experience__content">
+                                <img src="img/share.png" alt="" class="experience__content-img">
+                            </div>
+                        </div>
                         <h3 class="experience__item-ttl">
                             Lorem ipsum dolor.
                         </h3>
@@ -147,7 +176,7 @@
             </div>
             <div class="container">
                 <form action="#" class="start__form">
-                    <div class="form__group">
+                    <div class="form__group form__group--i">
                         <label class="form__label" for="select1">SomeText</label>
                         <select class="select form__select" name="select1" id="select1">
                             <option value="" class="select__option">option 1</option>
@@ -213,12 +242,18 @@
         <section>
             <div class="contact">
                 <div class="container">
-                   <div class="contact__text">¿Alguna Pregunta? Contacta con nosotros</div>
+                    <h1 class="contact__ttl">¿Alguna Pregunta? Contacta con nosotros</h1>
                     <form action="#" class="contact__form">
-                        <input type="number">
-                        <input type="email">
-                        <textarea name="contactText" id="contactText" cols="30" rows="10"></textarea>
-                        <button type="button">Send your request ></button>
+                        <div class="form__group">
+                            <input required class="form__input" type='tel' placeholder="number">
+                        </div>
+                        <div class="form__group">
+                            <input required class="form__input" type="email" placeholder="email">
+                        </div>
+                        <div class="form__group">
+                            <textarea required class="form__textarea" name="contactText" placeholder="message" id="contactText" ></textarea>
+                        </div>
+                        <button class="form__btn" type="button">Send your request ></button>
                     </form>
                 </div>
             </div>
@@ -238,8 +273,7 @@
         </div>
 
     </footer>
-    <script
-  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
