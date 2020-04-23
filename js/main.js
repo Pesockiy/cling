@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $(".select").select2({
-        dropdownParent: $('.form__group--i')
+        dropdownParent: $('.form__group--i'),
+        dropdownCssClass: 'no-search'
     });
     
 
