@@ -1,10 +1,8 @@
 $(document).ready(function () {
-    $(".select").select2({
-        dropdownParent: $('.form__group--i'),
-        dropdownCssClass: 'no-search'
+    $(".select2").select2({
+        dropdownParent: $('.start__form'),
+        minimumResultsForSearch: -1
     });
-    
-
 });
 
 

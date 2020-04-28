@@ -35,10 +35,11 @@
             <div class="container displayFlexRow">
                 <div class="home__col-left">
                     <h1 class="home__text">
-                        <i>Si no encuentras </i>
+                        <i class="home__text-italic">Si no encuentras </i>
                         una oferta para ti,
-                        <i>es porque...</i> <span class="home__text-accent">aún</span>
-                        <p class="home__text-accent">NO TE CONOCEN.</p>
+                        <i class="home__text-italic">es porque...</i> <span class="home__text-accent">aún</span>
+                       <div class="clearfix"></div>
+                        <span class="home__text-accent">NO TE CONOCEN.</span>
                     </h1>
                 </div>
                 <div class="home__col-right">
@@ -148,7 +149,7 @@
             <p class="services__text-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <div class="container">
-                <h2 class="services__ttl">Lorem <b>ipsum.</b></h2>
+                <h2 class="services__ttl">Lorem <b class="services__ttl-b">ipsum.</b></h2>
                 <ul class="services__list displayFlexRow">
                     <li class="services__item">
                         <div class="services__item-top"></div>
@@ -175,7 +176,7 @@
                 <form action="#" class="start__form">
                     <div class="form__group form__group--i">
                         <label class="form__label" for="select1">SomeText</label>
-                        <select class="select form__select" name="select1" id="select1">
+                        <select class="select select2 form__select" name="select1" id="select1">
                             <option value="" class="select__option">option 1</option>
                             <option value="" class="select__option">option 2</option>
                             <option value="" class="select__option">option 3</option>
@@ -183,7 +184,7 @@
                     </div>
                     <div class="form__group">
                         <label class="form__label" for="form__select2">Some Text</label>
-                        <select class="select form__select" name="select2" id="select2">
+                        <select class="select select2 form__select" name="select2" id="select2">
                             <option value="" class="select__option">option 1</option>
                             <option value="" class="select__option">option 2</option>
                             <option value="" class="select__option">option 3</option>
@@ -205,7 +206,8 @@
                     <div class="comments__item comments__item--active">
                         <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quam quidem non voluptas nostrum aperiam, modi nulla eum necessitatibus, consequuntur totam, blanditiis perspiciatis fugiat minus.</div>
                         <div class="comments__author author">
-                            <img src="img/Capa%2012.png" alt="" class="author__img">
+                            <a href="#" class="author__link">
+                                <img src="img/Capa%2012.png" alt="" class="author__img"></a>
                             <p class="author__name">First name Family name</p>
                             <span class="author__about">First proects manager</span>
                         </div>
@@ -213,7 +215,8 @@
                     <div class="comments__item">
                         <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quam quidem non voluptas nostrum aperiam, modi nulla eum necessitatibus, consequuntur totam, blanditiis perspiciatis fugiat minus.</div>
                         <div class="comments__author author">
-                            <img src="img/Capa%2012.png" alt="" class="author__img">
+                            <a href="#" class="author__link">
+                                <img src="img/Capa%2012.png" alt="" class="author__img"></a>
                             <p class="author__name">First name Family name</p>
                             <span class="author__about">First proects manager</span>
                         </div>
@@ -248,9 +251,9 @@
                             <input required class="form__input" type="email" placeholder="email">
                         </div>
                         <div class="form__group">
-                            <textarea required class="form__textarea" name="contactText" placeholder="message" id="contactText" ></textarea>
+                            <textarea required class="form__textarea" name="contactText" placeholder="message" id="contactText"></textarea>
                         </div>
-                        <button class="form__btn" type="button">Send your request ></button>
+                        <button class="form__btn-contact" type="button">Send your request ></button>
                     </form>
                 </div>
             </div>
