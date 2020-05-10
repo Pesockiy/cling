@@ -1,13 +1,20 @@
 $(document).ready(function () {
-    $(".select2").select2({
-        dropdownParent: $('.start__form'),
-        minimumResultsForSearch: -1
+    heighttoScroll = window.innerHeight
+    $(".scrollToNext").click(function () {
+        let top = $(this).closest('section').next().offset().top;
+        $('html,body').animate({scrollTop: top}, 900);
     });
+
+    $(".select2").each(function () {
+        $(this).select2({
+            minimumResultsForSearch: -1,
+            closeOnSelect: false,
+            selectOnClose: true,
+            dropdownParent: $(this).closest('.form__group')
+        })
+            
 });
-
-
-window.addEventListener('click', function(e) {
-    e = event.target;
-    if(!e.classList.contains('b-toBottom')) return;
-    scrollBy(0, innerHeight);
+    $(".select2").on('select2:select', function (e) { 
+    console.log('select event');
+});
 });
