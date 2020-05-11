@@ -876,6 +876,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
   .scrollToNext {
     height: 60px;
   }
@@ -911,11 +914,33 @@ body {
   .comments__item:not(:first-of-type) {
     margin-top: 0;
   }
+  .comments__col-right .comments__counter {
+    margin: 10% auto;
+  }
   .contact .form__btn-contact {
     font-size: 18px;
   }
   .services__item:nth-child(2) {
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media (max-width: 376px) {
+  .services__item {
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .services__item:first-child .services__item-top::before {
+    max-width: 74%;
+  }
+  .services__item-top {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .footer__address {
+    margin-bottom: 10px;
+  }
+  .footer .container.displayFlexRow {
+    justify-content: center;
   }
 }
