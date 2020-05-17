@@ -184,7 +184,7 @@ body {
 .home__text {
   color: #e1e1e1;
   line-height: 1;
-  font-size: clamp(30px, 5.12vw, 60px);
+  font-size: clamp(40px, 5.32vw, 60px);
 }
 .home__text > .home__text-accent {
   position: relative;
@@ -321,12 +321,12 @@ body {
 }
 .experience__text {
   font: 0/1.4 'Lato-HairlineItalic';
-  font-size: clamp(24.9px, 4.2496vw, 49.8px);
+  font-size: clamp(24px, 5.32vw, 50px);
 }
 .experience__ttl {
   margin: 35px 0 57px;
   font: 0 'Lato-Bold';
-  font-size: clamp(30px, 5.12vw, 60px);
+  font-size: clamp(24px, 5.32vw, 60px);
 }
 .experience__list {
   display: -webkit-flex;
@@ -391,7 +391,7 @@ body {
   padding: 34px 0;
   margin-bottom: 70px;
   font: 30px 'Lato-Italic';
-  font-size: clamp(19.5px, 3.328vw, 39px);
+  font-size: clamp(24px, 5.32vw, 40px);
   text-transform: capitalize;
   background: #e64382;
   color: #fff;
@@ -402,7 +402,7 @@ body {
 .services__ttl {
   margin-bottom: 50px;
   font: 40px 'Lato-Italic';
-  font-size: clamp(22.5px, 3.84vw, 45px);
+  font-size: clamp(24px, 5.32vw, 40px);
 }
 .services__ttl-b {
   font-family: 'Lato-BoldItalic';
@@ -455,7 +455,7 @@ body {
   border-top: none;
   border-left: none;
   top: 20%;
-  left: calc((100% - 30px) / 2);
+  left: calc(50% - 20px);
 }
 .services__item:nth-of-type(2) .services__item-top::before {
   max-width: 100%;
@@ -512,7 +512,7 @@ body {
   margin-bottom: 50px;
   max-width: 352px;
   font: 30px 'Lato-Bold';
-  font-size: clamp(15px, 2.56vw, 30px);
+  font-size: clamp(24px, 5.32vw, 30px);
   text-transform: capitalize;
   text-align: center;
   color: #fff;
@@ -577,6 +577,7 @@ body {
   border-top: none;
   border-left: none;
   right: 10px;
+  top: 50%;
 }
 .start .select2-selection__arrow b {
   display: none;
@@ -716,7 +717,7 @@ body {
 .contact__ttl {
   margin: 0 0 60px 0;
   font: 40px 'Lato-Italic';
-  font-size: clamp(20.01px, 3.41504vw, 40.02px);
+  font-size: clamp(24px, 5.32vw, 40px);
   text-align: center;
   color: #fff;
 }
