@@ -184,7 +184,7 @@ body {
 .home__text {
   color: #e1e1e1;
   line-height: 1;
-  font-size: clamp(40px, 5.32vw, 60px);
+  font-size: clamp(30px, 5.32vw, 60px);
 }
 .home__text > .home__text-accent {
   position: relative;
@@ -321,12 +321,12 @@ body {
 }
 .experience__text {
   font: 0/1.4 'Lato-HairlineItalic';
-  font-size: clamp(24px, 5.32vw, 50px);
+  font-size: clamp(30px, 5.32vw, 50px);
 }
 .experience__ttl {
   margin: 35px 0 57px;
   font: 0 'Lato-Bold';
-  font-size: clamp(24px, 5.32vw, 60px);
+  font-size: clamp(34px, 5.32vw, 60px);
 }
 .experience__list {
   display: -webkit-flex;
@@ -402,7 +402,7 @@ body {
 .services__ttl {
   margin-bottom: 50px;
   font: 40px 'Lato-Italic';
-  font-size: clamp(24px, 5.32vw, 40px);
+  font-size: clamp(30px, 5.32vw, 40px);
 }
 .services__ttl-b {
   font-family: 'Lato-BoldItalic';
