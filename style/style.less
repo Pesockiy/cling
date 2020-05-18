@@ -61,8 +61,8 @@ ol {
 }
 
 
-.fontSize(@minSize,@maxSize) {
-	font-size: clamp(@minSize,5.32vw,@maxSize);
+.fontSize(@minSize, @maxSize) {
+	font-size: clamp(@minSize, 5.32vw, @maxSize);
 }
 
 .arrow(@bdColor, @size) {
@@ -140,6 +140,10 @@ body {
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
 	padding: 23px 0 20px;
 	background: #fff;
 	border-bottom: 3px solid @mainColor;
@@ -203,6 +207,7 @@ body {
 
 .home {
 	position: relative;
+	margin-top: 134px;
 	min-height: ~'calc(100vh - 134px)';
 	padding-top: 60px;
 	padding-bottom: 90px;
@@ -423,13 +428,13 @@ body {
 
 	&__text {
 		font: 0/1.4 @LatoHairlineItalic;
-		.fontSize(30px,50px);
+		.fontSize(30px, 50px);
 	}
 
 	&__ttl {
 		margin: 35px 0 57px;
 		font: 0 @LatoBold;
-		.fontSize(34px,60px);
+		.fontSize(34px, 60px);
 	}
 
 	&__list {
@@ -511,7 +516,7 @@ body {
 		padding: 34px 0;
 		margin-bottom: 70px;
 		font: 30px @LatoItalic;
-		.fontSize(24px,40px);
+		.fontSize(24px, 40px);
 		text-transform: capitalize;
 		background: @accentColor;
 		color: #fff;
@@ -526,7 +531,7 @@ body {
 	&__ttl {
 		margin-bottom: 50px;
 		font: 40px @LatoItalic;
-		.fontSize(30px,40px);
+		.fontSize(30px, 40px);
 
 		&-b {
 			font-family: @LatoBoldItalic;
@@ -575,7 +580,7 @@ body {
 		}
 
 		&:nth-of-type(1) &-top::after {
-						.arrow(@mainColor, 40px);
+			.arrow(@mainColor, 40px);
 
 			top: 20%;
 			left: calc(50% - 20px);
@@ -651,7 +656,7 @@ body {
 		margin-bottom: 50px;
 		max-width: 352px;
 		font: 30px @LatoBold;
-		.fontSize(24px,30px);
+		.fontSize(24px, 30px);
 		text-transform: capitalize;
 		text-align: center;
 		color: #fff;
@@ -1103,6 +1108,7 @@ body {
 	}
 
 	.home {
+		margin-top: 170px;
 
 		&__text-italic.displayFlexRow {
 			justify-content: space-between;

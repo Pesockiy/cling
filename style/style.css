@@ -89,6 +89,10 @@ body {
   background: rgba(255, 255, 255, 0.4);
 }
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   padding: 23px 0 20px;
   background: #fff;
   border-bottom: 3px solid #517398;
@@ -140,6 +144,7 @@ body {
 }
 .home {
   position: relative;
+  margin-top: 134px;
   min-height: calc(100vh - 134px);
   padding-top: 60px;
   padding-bottom: 90px;
@@ -848,6 +853,9 @@ body {
   }
   .header .nav {
     margin: 10px 0;
+  }
+  .home {
+    margin-top: 170px;
   }
   .home__text-italic.displayFlexRow {
     justify-content: space-between;
