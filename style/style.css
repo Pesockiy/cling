@@ -607,7 +607,7 @@ body {
 }
 .start__block-top {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding: 12px;
   margin: auto;
   margin-bottom: 50px;
