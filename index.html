@@ -13,25 +13,30 @@
 	<header class="header">
 		<div class="container displayFlexRow">
 			<a href="#" class="logo header__logo">
-				<img src="img/Logo%20Marrone.png" alt="" class="logo__img">
+				<img src="http://personal.ho.ua/spanishSite/img/Logo%20Marrone.png" alt="" class="logo__img">
 			</a>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__list-item">
-						<a href="#start" class="nav__link nav__link--active">FIRST LINK</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="#comments" class="nav__link">SECOND LINK</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="#contact" class="nav__link">THIRD LINK</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="nav-wrap">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__list-item">
+							<a href="#home" class="nav__link nav__link--active">HOME</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#services" class="nav__link">SERVICES</a>
+						</li>
+						<li class="nav__list-item">
+							<a href="#start" class="nav__link">START</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu-hamburger">
+				<span class="menu-hamburger__line"></span>
+			</div>
 		</div>
 	</header>
 	<main class="main">
-		<section class="home">
+		<section class="home" id="home">
 			<div class="container displayFlexRow">
 				<div class="home__col-left">
 					<div class="home__text">
@@ -145,7 +150,7 @@
 			</div>
 			<div class="scrollToNext"></div>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<p class="services__text-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 			<div class="container">
@@ -190,7 +195,7 @@
 						</select>
 					</div>
 					<div class="form__group">
-						<input type="search" placeholder="some text" class="form__search" id="search" name="search">
+						<input type="text" placeholder="some text" class="form__search" id="search" name="search">
 					</div>
 				</form>
 			</div>
@@ -243,14 +248,11 @@
 				<h1 class="contact__ttl">¿Alguna Pregunta? Contacta con nosotros</h1>
 				<form action="#" class="contact__form">
 					<div class="form__group">
-						<input required class="form__input" type='tel' placeholder="number">
-					</div>
+						<input required class="form__input" type='tel' placeholder="number"></div>
 					<div class="form__group">
-						<input required class="form__input" type="email" placeholder="email">
-					</div>
+						<input required class="form__input" type="email" placeholder="email"></div>
 					<div class="form__group">
-						<textarea required class="form__textarea" name="contactText" placeholder="message" id="contactText"></textarea>
-					</div>
+						<textarea required class="form__textarea" name="contactText" placeholder="message" id="contactText"></textarea></div>
 					<button class="form__btn-contact" type="button">Send your request ></button>
 				</form>
 			</div>
@@ -259,7 +261,7 @@
 	<footer class="footer">
 		<div class="container displayFlexRow">
 			<div class="footer__address">
-				Cling - © 2015 All Right Reserved.
+				Cling - © 2020 All Right Reserved.
 
 			</div>
 
