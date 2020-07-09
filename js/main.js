@@ -43,7 +43,10 @@ $(document).ready(function () {
 
 
 	$('.header .nav__link').click(function () {
-
+		if('.nav-wrap--active') {
+			$('.nav-wrap').removeClass('nav-wrap--active');
+			$('.hamburger').toggleClass('hamburger--open');
+		}
 		$('.header .nav__link').removeClass('nav__link--active');
 		$(this).addClass('nav__link--active');
 
@@ -57,9 +60,9 @@ $(document).ready(function () {
 
 	});
 
-	$('.menu-hamburger').click(function() {
-		$(this).toggleClass('menu-hamburger--open');
-		$('body').toggleClass('bodyOverflowHidden');
+	$('.hamburger').click(function() {
+		$(this).toggleClass('hamburger--open');
+		$('body').toggleClass('body--overflow-hidden');
 		$('.nav-wrap').toggleClass('nav-wrap--active');
 	});
 
