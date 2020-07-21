@@ -195,7 +195,7 @@ body {
 .hamburger--open::before {
   top: 0;
   transform: scaleX(1.62) translateY(8px) rotate(-55deg);
-  background: #fff;
+  background: #ffffff;
 }
 .nav__list {
   margin: 0;
