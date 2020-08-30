@@ -179,7 +179,7 @@ body {
 }
 .hamburger--open .hamburger__line {
   visibility: hidden;
-  transition: all 0.5s;
+  transition: all 0.05s;
 }
 .hamburger::after {
   top: 0;

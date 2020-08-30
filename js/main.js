@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 	});
 
-	$(".scrollToNext").click(function () {
+	$(".scrollToNext").on('click', function () {
 
 		headerFixing();
 
@@ -42,8 +42,8 @@ $(document).ready(function () {
 	});
 
 
-	$('.header .nav__link').click(function () {
-		if('.nav-wrap--active') {
+	$('.header .nav__link').on('click', function () {
+		if($('.nav-wrap').hasClass('nav-wrap--active')) {
 			$('.nav-wrap').removeClass('nav-wrap--active');
 			$('.hamburger').toggleClass('hamburger--open');
 		}
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
 	});
 
-	$('.hamburger').click(function() {
+	$('.hamburger').on('click', function() {
 		$(this).toggleClass('hamburger--open');
 		$('body').toggleClass('body--overflow-hidden');
 		$('.nav-wrap').toggleClass('nav-wrap--active');
